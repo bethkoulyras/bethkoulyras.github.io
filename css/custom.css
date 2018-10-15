@@ -4,7 +4,7 @@ Modify this file to your hearts content and make your website look awesome!*/
 
 
 body{
-	background-color: #ebebeb;
+	background-color: #fff;
 	padding-top: 80px;
 }
 
@@ -15,11 +15,12 @@ body{
   padding-bottom: 100px;
   width:100%;
   min-height: 100vh;
-  background: url('../img/common/homepage_bg.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-color: #fafafa;
+  /*background: url('../img/common/Logo.2.3.1@3x.png') no-repeat center center fixed;*/
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  -o-background-size: 100%;
 }
 
 /*Cards*/
@@ -32,12 +33,14 @@ img.nav-bar-img{
 
 .navbar{
 	background-color: #fff;
-
+	border-bottom: 1px solid #cfcfcf;
+	
 }
 
 a.navbar-brand{
-	font-family:'Montserrat', Sans-Serif;
-	font-size: 
+	font-family:'Roboto', Sans-Serif;
+	padding-right: 10px;
+	/* font-size:   might need to change */
 }
 
 /*Floating Nav*/
@@ -48,33 +51,59 @@ a.navbar-brand{
 }
 
 	a.float-nav-link{
-		font-family: 'Lato', Sans-Serif;
+		font-family: 'Roboto', Sans-Serif;
 		color: #595959;
 		font-size: 14px;
 		font-weight: 600;
 		text-align: left;
 	}
 
+nav.navbar {
+	padding: 0px;
+}
+
+.nav-item{
+	color: #000;
+	padding-right: 10px;
+	font-family: 'Roboto', Sans-Serif;
+}
+
+.navbar-brand{
+	color: #fff;
+	border-right: 1px solid #cfcfcf;
+	padding: 13px 0px 13px 0px;
+}
+
+.nav-item:hover{
+	text-decoration: none;
+	color: #989898;
+}
+
+navbar-nav {
+	float: left;
+}
 /*Image Rules*/
-img{
+/*img{
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border: 0px solid #000000;
-}
+}*/
 
 /*Font Override Rules*/
 h1, h2, h3, h4, h5, h6 {
-	font-family:'Montserrat', Sans-Serif;
+	font-family:'Roboto', Sans-Serif;
 	margin-bottom: 20px;
+	
 }
 	h1.welcome-special{
 		font-size: 90px;
+		font-weight: 1000;
 	}
 
 	h2.welcome-special-sub{
-		font-family: 'Lato', Sans-Serif;
-		font-size: 30px;
+		font-family: 'Roboto', Sans-Serif;
+		font-size: 20px;
 	}
 
 	h3{
@@ -84,10 +113,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 p, li, span, a {
-	font-family: 'Lato', Sans-Serif;
+	font-family: 'Roboto', Sans-Serif;
 	text-align: justify;
 	font-weight: 300;
 }
+	
 
 	p{
 		color: #494949;
@@ -103,6 +133,8 @@ span.img-caption{
 }
 
 /*Container/class etc Override Rules*/
+
+
 .welcome-message{
 	margin-top: 200px;
 }
@@ -112,18 +144,20 @@ span.img-caption{
 }
 
 .welcome-button{
-	background-color: transparent;
-	border-radius: 0px 0px 0px 0px;
-	border: 3px solid #000;
-	font-family:'Montserrat', Sans-Serif;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #000;
+	font-family:'Roboto', Sans-Serif;
 	font-size: 15px;
 	color: #000;
 	text-transform: uppercase;
+	margin-right: 15px
 }
 
 .welcome-button:hover{
-	background-color: #000;
-	border-color: #000;
+	background-color: #2963FF;
+	border-color: #2963FF;
+	transform: scale()
 }
 
 .master-heading{
