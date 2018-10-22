@@ -16,15 +16,22 @@ body{
   width:100%;
   min-height: 100vh;
   background-color: #fafafa;
-  /*background: url('../img/common/Logo.2.3.1@3x.png') no-repeat center center fixed;*/
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
   -o-background-size: 100%;
 }
 
+/*.container{
+	margin-left: 3px;
+	margin-right: -80px;
+}*/
+
 /*Cards*/
-.card{border: none; background-color: transparent;}
+.card{
+	border: none; 
+	background-color: transparent;
+}
 
 /*Navbar Rules*/
 img.nav-bar-img{
@@ -34,12 +41,12 @@ img.nav-bar-img{
 .navbar{
 	background-color: #fff;
 	border-bottom: 1px solid #cfcfcf;
-	
 }
 
 a.navbar-brand{
 	font-family:'Roboto', Sans-Serif;
 	padding-right: 10px;
+	padding-left: 20px;
 	/* font-size:   might need to change */
 }
 
@@ -63,32 +70,31 @@ nav.navbar {
 }
 
 .nav-item{
-	color: #000;
 	padding-right: 10px;
 	font-family: 'Roboto', Sans-Serif;
+	color: #4a4a4a;
+	font-weight: 400;
+	font-size: 14px;
+	margin-left: 10px;
 }
 
 .navbar-brand{
 	color: #fff;
 	border-right: 1px solid #cfcfcf;
-	padding: 13px 0px 13px 0px;
+	padding: 10px 0px 10px 0px;
 }
 
 .nav-item:hover{
 	text-decoration: none;
-	color: #989898;
+	color: #b9b9b9;
 }
 
-navbar-nav {
+.navbar-nav{
 	float: left;
 }
+
 /*Image Rules*/
-/*img{
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border: 0px solid #000000;
-}*/
+
 
 /*Font Override Rules*/
 h1, h2, h3, h4, h5, h6 {
@@ -98,12 +104,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 	h1.welcome-special{
 		font-size: 90px;
-		font-weight: 1000;
+		font-weight: 700;
+		color: #2c2c2c;
 	}
 
 	h2.welcome-special-sub{
 		font-family: 'Roboto', Sans-Serif;
 		font-size: 20px;
+		margin-top: -20px;
 	}
 
 	h3{
@@ -151,7 +159,8 @@ span.img-caption{
 	font-size: 15px;
 	color: #000;
 	text-transform: uppercase;
-	margin-right: 15px
+	margin-right: 15px;
+	margin-top: 20px;
 }
 
 .welcome-button:hover{
@@ -174,12 +183,14 @@ span.img-caption{
 
 /*Footer*/
 .footer{
+	position: absolute;
+	bottom: 0;
 	margin-top: 50px;
 	padding-top: 30px;
 	width: 100%;
-	min-height: 100px;
-	background-color: #989898;
-	border-top: 1px solid #727272;
+	min-height: 50px;
+	background-color: #fff;
+	border-top: 1px solid #cfcfcf;
 }
 
 
