@@ -93,13 +93,25 @@ nav.navbar {
 	float: left;
 }
 
+.nav-text{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	margin: auto;
+	font-size: 30px;
+	font-weight: 900;
+	color: #2c2c2c;
+	text-decoration: none;	
+}
+
 /*Image Rules*/
 
 
 /*Font Override Rules*/
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Roboto', Sans-Serif;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	
 }
 	h1.welcome-special{
@@ -169,10 +181,6 @@ span.img-caption{
 	transform: scale()
 }
 
-.master-heading{
-	padding-top: 50px;	
-}
-
 .section-heading{
 	padding-top: 100px;	
 }
@@ -186,12 +194,150 @@ span.img-caption{
 	position: absolute;
 	bottom: 0;
 	margin-top: 50px;
-	padding-top: 30px;
+	padding-top: 20px;
 	width: 100%;
 	min-height: 50px;
 	background-color: #fff;
 	border-top: 1px solid #cfcfcf;
 }
 
+.footer-text{
+	padding-left: 50px;
+	
+}
+
+/* Process Journal */
+
+.row {
+	text-align: center;
+}
+
+.master-heading{
+	padding-top: 45px;	
+}
+
+.master-heading h1{
+	text-align: center;
+	font-size: 40px;
+	color: #0961FF;
+	font-weight: 400;
+	display: inline-block;
+}
+
+svg {
+	stroke: #0961FF;
+	stroke-width: 4;
+	display: block;
+	margin: auto; 
+	margin-bottom: 30px;
+	
+}
+
+.journal-headings {
+	color: #9B9B9B;
+	font-weight: 400;
+	text-align: center;
+	
+}
+.journal-headings h1 {
+	padding: 12px 0px;
+	
+}
+
+.journal-headings h1 a {
+	text-decoration: none;
+	color: #9B9B9B;
+	font-weight: 400;
+	display: inline-block;
+	transition: transform .2s;
+	
+}
+
+.journal-headings h1 a:hover {
+	text-decoration: none;
+	color: #2c2c2c;
+	transform: scale(1.1);
+}
+
+.center-text {
+	/*padding-top: 20px;*/
+	display: inline-block;
+	width: 70%;
+}
+
+.indent-text{
+	padding: 0 50px;
+}
+
+.footer-next h4 a {
+	color: #9B9B9B;
+	display: inline-block;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+
+.footer-next p{
+	text-align: center;
+	margin: -10px 0 -9px 0;
+	
+	color: #9B9B9B;
+	font-size: 10px;
+}
 
 
+.icon{
+	position: absolute;
+	top: 15%;
+	left: 90%;
+	transform: translate(-50%,-50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	background: #fff;
+}
+
+.hamburger{
+	width: 50px;
+	height: 6px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	transition: .5s;
+}
+
+.hamburger:before,
+.hamburger:after{
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	transition: .5s;
+}
+
+.hamburger:before{
+	top: -16px;
+}
+
+.hamburger:after{
+	top: 16px;
+}
+
+.icon.active .hamburger{
+	background: rgba(0,0,0,0);
+	box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before{
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after{
+	top: 0;
+	transform: rotate(135deg);
+}
