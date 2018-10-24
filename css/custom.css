@@ -30,6 +30,7 @@ body{
 .card{
 	border: none; 
 	background-color: transparent;
+	margin-left: 30px;
 }
 
 /*Navbar Rules*/
@@ -127,12 +128,14 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 90px;
 		font-weight: 700;
 		color: #2c2c2c;
+		
 	}
 
 	h2.welcome-special-sub{
 		font-family: 'Roboto', Sans-Serif;
 		font-size: 20px;
 		margin-top: -20px;
+		
 	}
 
 	h3{
