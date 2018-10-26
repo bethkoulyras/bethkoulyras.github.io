@@ -185,12 +185,13 @@ span.img-caption{
 	text-transform: uppercase;
 	margin-right: 15px;
 	margin-top: 20px;
+	transition: transform .2s;
 }
 
 .welcome-button:hover{
 	background-color: #2963FF;
 	border-color: #2963FF;
-	transform: scale()
+	transform: scale(1.05);
 }
 
 .section-heading{
@@ -272,7 +273,7 @@ svg {
 .center-text {
 	/*padding-top: 20px;*/
 	display: inline-block;
-	width: 70%;
+	width: 100%%;
 }
 
 .indent-text{
@@ -382,4 +383,9 @@ svg {
 }
 html.is-animating .transition-fade{
     opacity: 0;
+}
+
+.contain2 {
+	margin-left: 12%;
+	margin-right: 12%;
 }
