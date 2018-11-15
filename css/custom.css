@@ -120,10 +120,7 @@ a.nav-title:hover{
 
 
 /*Font Override Rules*/
-.welcome-special h1, h2 {
-	font-family:'Roboto', Sans-Serif;
-	margin-bottom: 10px;
-}
+
 
 h5 {
 	font-family: 'Roboto Mono', monospace;
