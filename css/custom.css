@@ -15,7 +15,8 @@ body{
   padding-bottom: 100px;
   width:100%;
   min-height: 100vh;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
+  background-color: #ffffff;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
@@ -119,9 +120,14 @@ a.nav-title:hover{
 
 
 /*Font Override Rules*/
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
 	font-family:'Roboto', Sans-Serif;
-	margin-bottom: 10px;
+	margin-bottom: 10px;*/
+
+h5 {
+	font-family: 'Roboto Mono', monospace;
+	margin-top: 50px;
+}
 	
 }
 	h1.welcome-special{
@@ -138,30 +144,33 @@ h1, h2, h3, h4, h5, h6 {
 		
 	}
 
-	h3{
-		text-transform: uppercase;
-		color: #a49727;
-		letter-spacing: -0.5px;
-	}
-
 p, li, span, a {
-	font-family: 'Roboto', Sans-Serif;
+	font-family: 'Europa-Regular','Roboto', Sans-Serif;
 	text-align: justify;
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 14px;
+	/*line-height: 20px;*/
 }
 	
 
 	p{
 		color: #494949;
-		line-height: 30px;
-		margin-bottom: 25px;
+		/*line-height: 30px;
+		margin-bottom: 25px;*/
 	}
 
 span.img-caption{
+	font-family: 'Roboto Mono', monospace;
 	display: block;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 500;
-	padding: 10px 0px 10px 0px;
+	padding: 40px 0px 10px 0px;
+}
+
+span.img-info {
+	display: block;
+	text-align: center;
+	padding: 0 20px;
 }
 
 /*Container/class etc Override Rules*/
@@ -222,6 +231,8 @@ span.img-caption{
 
 .row {
 	text-align: center;
+	width: 90%;
+	margin: auto;
 }
 
 .master-heading{
@@ -233,6 +244,7 @@ span.img-caption{
 	font-size: 40px;
 	color: #0961FF;
 	font-weight: 400;
+	font-family: "Europa-Regular", sans-serif;	
 	display: inline-block;
 }
 
@@ -273,11 +285,12 @@ svg {
 .center-text {
 	/*padding-top: 20px;*/
 	display: inline-block;
-	width: 100%%;
+	width: 100%;
 }
 
 .indent-text{
-	padding: 0 50px;
+	padding: 0 60px;
+	
 }
 
 
@@ -287,6 +300,7 @@ svg {
 	text-align: center;
 	margin: -18px 0 -9px 0;
 	font-size: 10px;
+	font-family: "Roboto Mono", monospace;
 }
 
 .footer-next{
@@ -298,6 +312,8 @@ svg {
 .footer-next h4{
 	color: #9b9b9b;
 	text-align: center;
+	font-family: "Roboto Mono", monospace;
+	font-weight: 200px;
 }
 
 .footer-next p{
@@ -388,4 +404,156 @@ html.is-animating .transition-fade{
 .contain2 {
 	margin-left: 12%;
 	margin-right: 12%;
+}
+
+
+/* PORTFOLIO PAGE */
+
+a.portfolio-container {
+	text-decoration: none;
+	color: #2c2c2c;
+	transition: transform .1s;
+}
+
+a.portfolio-container:hover{
+   	display: block;
+	box-shadow: 0 0 15px rgba(41, 99, 255, 0.2);
+	transform: scale(1.03);
+}
+
+.portfolio-heading-text {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    margin-right: 10%;
+    transform: translate(-50%, -50%) 
+}
+
+.portfolio-heading-text h1, h3  {
+	font-family: "Europa-BoldItalic", sans-serif;
+}
+
+.portfolio-heading-text p {
+	font-family: "Europa-Regular", sans-serif;
+}
+
+/* ASH */
+
+.ash-heading-text h1  {
+	font-family: "Europa-BoldItalic", sans-serif;
+	font-size: 60px;
+}
+
+.ash-heading-text h3  {
+	font-family: "Europa-BoldItalic", sans-serif;
+	font-size: 30px;
+}
+
+.ash-heading-text p {
+	font-family: "Europa-Regular", sans-serif;
+	padding-top: 20px;
+	font-size: 18px;
+	text-align: center;
+	width: 75%;
+}
+
+.ash-intro {
+	line-height: 5px;
+}
+
+.ash-intro h5 {
+	font-family: "Roboto Mono";
+	font-weight: 700;
+	font-size: 14px;
+	text-align: left;
+	padding: 10px 0;
+	
+}
+
+.portfolio-title h5 {
+	font-family: "Roboto Mono";
+	background-color: #2963FF;
+	font-size: 16px;
+	color: white;
+	padding: 10px;
+	
+
+}
+
+.alternate-sect {
+	/*margin-top: 100px;*/
+	background-color: #fafafa;
+	background-size: 100%;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	/*padding-top: 100px;*/
+	min-height: 100vh;
+}
+
+.white-sect {
+	
+	background-color: #ffffff;
+	background-size: 100%;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	
+	min-height: 100vh;
+}
+.portfolio-text {
+	
+}
+
+/* utilities */
+
+.text-quote {
+	font-family: 'Europa-BoldItalic';
+	font-size: 20px;
+	text-align: center;
+}
+
+.center-children-vertically {
+	display: flex;
+	flex-direction: column;
+	justify-content	: center;
+	height: 100%;
+}
+
+.ideation-bus-heading {
+	margin-top: 80px;
+	font-weight: 900;
+}
+
+.iteration-heading {
+	float: left;
+	font-size: 16px;
+	color: #969696;
+}
+
+.solution-num {
+	font-size: 60px;
+	color: #D0D0D0;
+	
+}
+
+.tools {
+	margin-top: 18px;
+}
+
+.tools2 {
+	margin-top: 10px;
+}
+
+.back-button {
+	color: #969696; 
+}
+
+.back-button a{
+	text-decoration: none;
+	color: #969696; 
+	font-family: 'Roboto Mono', monospace;
+}
+
+.back-button a:hover {
+	color: #000;
+	font-family: 'Roboto Mono', monospace;
 }
