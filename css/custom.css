@@ -106,6 +106,7 @@ nav.navbar {
 }
 
 a.nav-title{
+	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	font-weight: 900;
 	color: #2c2c2c;
