@@ -1,0 +1,241 @@
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+    
+    }
+
+    /* .project-intro img {
+        opacity: 0.9;
+        max-width: 45%;
+        display: block;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+	    transform: rotateX(30deg) rotateY(30deg);
+
+    } */
+
+    body, .card {
+        background: #ffffff;
+    }
+  
+
+    .navbar-nav{
+        padding: 30px;
+        font-size: 1.4em;
+        font-family:   "DIN Alternate", "Libre Franklin ExtraBold"; 
+    }
+
+    h4, p {
+        /* font-family:  "Europa", "DIN Alternate";  */
+        /* padding-left: 12px; */
+        /* font-size: 1.2em; */
+    }
+    .title {
+        font-size: 1.2em;
+        margin-bottom: 2%;
+    }
+    .based {
+        font-size: 0.8em;  
+    }
+ /* width: 540px;
+        height: 410px; */
+  
+
+    /* .project-intro .ash-text, .move-text  {
+       
+        width: 800px;
+        height: 200px;
+        opacity: 0;
+        font-family:  "DIN Alternate"; 
+       
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        top: 0;
+        text-align: center;
+        transform: translateZ(30px) scale(0.940);
+       
+    }
+    */
+
+    /* .move-text h2{
+        position: absolute;
+        top: 35%;
+        left: 30%;
+    } */
+/* 
+    .move-text p, .ash-text p {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        right: 10%;
+    } */
+
+    /* .ash-text h2{
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        right: 20%;
+        font-size: 5em;
+    } */
+
+    /* .ash-text:hover{
+        cursor: url('arrow.png'), auto;
+        opacity: 1;
+    
+        transition: 0.3s;
+        color: black;
+    } */
+    /* background: rgba(255,255,255,0.8); */
+
+
+img {
+    opacity: 0.9;
+}
+    #mainWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #cardsWrapper{
+        /* display: flex; */
+        justify-content: space-between;
+        width: 40%;
+        margin-top: 10%;
+      }
+      
+      .card{
+        border: none;
+        perspective: 500px;
+        position: relative;
+        width: 65%;
+        display: block;
+        margin: 0 auto 0 -10%;
+        /* min-height: 100vh; */
+      }
+
+      .card.second{
+        border: none;
+        perspective: 500px;
+        position: relative;
+        width: 65%;
+        display: block;
+        margin: 20% -20% 0 auto;
+    
+      }
+      
+      .project-intro img {
+        max-width: 100%;
+        max-height: 100%;
+        transform-style: preserve-3d;
+      }
+      
+      .ash-text {
+        position: absolute;
+        top: -5%;
+        z-index: 99;
+        left: 0;
+        color: black;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 800;
+        font-size: 2.5vw;
+        opacity: 0;
+        
+      }
+
+      .move-text{
+        position: absolute;
+        top: -5%;
+        z-index: 99;
+        left: -28%;
+        color: black;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 800;
+        font-size: 3vw;
+        opacity: 0;
+      }
+
+
+      
+      .ash-text:hover, .move-text:hover {
+          cursor: url('arrow.png'), auto;
+          opacity: 1;
+          transition: 1s;
+      }
+ 
+      .ash-text .ash-title {
+        margin-top: 30%; 
+        /* margin-top: 45%; */
+        margin-bottom: 30%; 
+        /* padding-left: 63%; */
+        margin-left: 88%;
+        /* margin-right: 20%; */
+        width: 115%;
+      }
+
+      .ash-intro{
+        font-weight: 400;
+        width: 120%;
+        margin-top: -25%;
+        /* padding-left: 63%; */
+        margin-left: 88%;
+        font-size: 1vw;
+      }
+
+
+      .move-text p{
+        margin-top: 45%; 
+        margin-bottom: 20%; 
+      }
+
+
+
+
+
+
+
+
+
+
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,1);
+        border-color: rgba(255,255,255,1);
+    }
+
+
+    @media (max-width: 575px) {
+		.navbar-nav{
+            padding-left: 0px;
+        }
+    }
+    
+    /* .row {
+        perspective: 900px;
+        position: relative;
+    } */
+
+    .footer {
+       
+        height: 200px;
+        width: 400px;
+    }
+
+    .sidenav {
+        font-family: "DIN Alternate";
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: -1;
+        top: 89%;
+        left: 3%;
+        overflow-x: hidden;
+        padding-top: 20px;
+       
+    }
