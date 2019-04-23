@@ -16,16 +16,18 @@
 
     .navbar-nav{
         padding: 30px;
-        font-size: 1.4em;
+        font-size: 1.6vw;
         font-family:   "DIN Alternate", "Libre Franklin ExtraBold"; 
     }
 
     .title {
-        font-size: 1.2em;
-        margin-bottom: 2%;
+        font-size: 1.4vw;
+        margin-bottom: 7%;
+        margin-top: -15%;
     }
     .based {
-        font-size: 0.8em;  
+        font-size: 0.8vw; 
+        margin-top: -5%;
     }
  
 
@@ -151,7 +153,7 @@
         top: 89%;
         left: 3%;
         overflow-x: hidden;
-        padding-top: 20px;    
+        padding-top: 30px;  
     }
 
     /* ASH.HTML */
