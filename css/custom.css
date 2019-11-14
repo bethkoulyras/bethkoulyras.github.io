@@ -199,7 +199,7 @@ img {
 .container {
   font-family: 'Nunito-Regular', 'Europa-Regular', 'Roboto', Sans-Serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1vw;
   color: #494949;
   background-color: #ffffff;
   /* background-size: 90%; */
@@ -220,32 +220,34 @@ img {
 span.img-caption {
   font-family: 'Roboto Mono', monospace;
   display: block;
-  font-size: 16px;
+  /* font-size: 1vw; */
   font-weight: 500;
-  padding: 40px 0px 10px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 span.img-info {
   display: block;
   text-align: center;
-  padding: 0 20px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  /* padding: 0 20px; */
 }
 
 
 .port-heading-text h1 {
   font-family: "Europa-BoldItalic", sans-serif;
-  font-size: 60px;
+  font-size: 4vw;
 }
 
 .port-heading-text h3 {
   font-family: "Europa-BoldItalic", sans-serif;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .port-heading-text p {
   font-family: "Nunito-Italic", "Europa-Regular", sans-serif;
   /* padding-top: 20px; */
-  font-size: 18px;
+  font-size: 1.25vw;
   text-align: center;
   /* width: 75%; */
 }
@@ -254,7 +256,7 @@ span.img-info {
 .port-intro h5 {
   font-family: "Roboto Mono";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1vw;
   text-align: left;
   padding: 10px 0;
 
@@ -263,11 +265,13 @@ span.img-info {
 .portfolio-title {
   font-family: "Roboto Mono";
   background: #2963FF;
-  font-size: 16px;
+  font-size: 1.1vw;
   color: white;
   padding: 10px 20px;
   margin-left: 20px;
+  margin-top: 60px;
 }
+
 
 /* .alternate-sect {
 	background-color: #fafafa;
@@ -289,7 +293,7 @@ span.img-info {
 
 .text-quote {
   font-family: 'Europa-BoldItalic';
-  font-size: 20px;
+  font-size: 1.4vw;
   text-align: center;
 }
 
@@ -317,13 +321,10 @@ span.img-info {
 
 }
 
-.tools {
+/* .tools {
   margin-top: 18px;
-}
+} */
 
-.tools2 {
-  margin-top: 10px;
-}
 
 .back-button {
   color: #969696;
@@ -361,7 +362,7 @@ span.img-info {
 h5 {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 /* 
@@ -396,5 +397,5 @@ figcaption {
 span.xyz-caption {
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
+  font-size: 0.8vw;
 }
