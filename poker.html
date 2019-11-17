@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Grab Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jts3ktw.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <link rel="shortcut icon" href="./img/common/favicon.ico" type="image/x-icon" />
+
+    <!-- Page Title -->
+    <title>Poker Maps</title>
+
+    <!-- This is our Meta Description -->
+    <meta name="description" content="What you write here will often show up in search results under the page title">
+
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="grey-background">
+
+            <div class="col-md-1 offset-md-1 back-button mt-4">
+                <a href="index.html">
+                    <h5>BACK</h5>
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="port-heading-text">
+                        <h1>POKER MAPS</h1>
+                        <h3>GAMBLING IN SYDNEY</h3>
+                        <p class="center-text" style="padding-top: 20px;">This project explores the correlation between
+                            poker machines and socio-economic status in Sydney.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <img src="./img/poker-maps/Bitmap Copy.png" class="img-fluid mb-4" alt="Responsive image"
+                        style=" width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+
+            <div class="port-intro intro-text-size mt-4">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <h5>Team</h5>
+                        <p class="role-text"> I worked on this project while <br><br><br>interning at Small Multiples.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Role</h5>
+                        <p>Research</p>
+                        <p>Data Processing</p>
+                        <p>Data Visualisation</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Time</h5>
+                        <p>June 2019</p>
+                    </div>
+                    <div class="col-sm-2 offset-md-1">
+                        <h5>Tools</h5>
+
+
+                        <p class="tools">
+                            <img src="./img/poker-maps/qgis-icon.png" class="img-fluid " alt="Resonsive image"
+                                style="width: 15%; float: left; margin-right: 5px; margin-top:-5px;">
+                            QGIS</p>
+
+                        <p class="tools"><img src="./img/poker-maps/carto-icon.png" class="img-fluid "
+                                alt="Resonsive image" style="width: 12%; margin-right: 5px;">
+                            Carto</p>
+
+
+                        <p class="tools">
+                            <img src="./img/poker-maps/kepler-icon.png" class="img-fluid" alt="Resonsive image"
+                                style="width: 10%; margin-right: 5px;">
+                            Kepler</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="container">
+
+        <div class="row">
+            <h5 class="portfolio-title">DATA COLLECTION & PROCESSING</h5>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="portfolio-text">
+                    <p class="text-left">I began by collecting data for every liquor and gambling club in Sydney that
+                        had poker machines. This included information about how many machines they had and in what
+                        locations. I then geocoded each club so I could plot them on a map. </p>
+
+                    <p class="text-left">To find out whether the number of poker machines per club had a correlation
+                        with a suburbs socio-economic status, I needed overlay this information on top of Socio-Economic
+                        Indexes for Areas (SEIFA) data. In order to do this I obtained the shapefile of suburbs in NSW
+                        and merged them with this data. </p>
+
+                    <p class="text-left">One great application to help me do this was QGIS, a tool to create, visualise
+                        and analyse geospatial data. I used this to visualise the range of advantaged and disadvantaged
+                        suburbs in NSW. I imported the shapefile and combined it with the SEIFA data to make a visible
+                        choropleth that I could lay it against my other data. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./img/poker-maps/maps-1.png" class="img-fluid img-shadow" alt="Responsive image"
+                    style="width: 100%;">
+            </div>
+            <div class="col-md-6">
+                <img src="./img/poker-maps/maps-2.png" class="img-fluid img-shadow" alt="Responsive image">
+            </div>
+        </div>
+
+        <div class="row col-md-11">
+            <span class="xyz-caption">
+                <img-caption>QGIS</img-caption>
+            </span>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="portfolio-text">
+                    <p class="text-left">I used an online map visualising tool called Carto to quickly plot the number
+                        of poker machines that were at each club. The larger and darker the circle, the more machines.
+                        Initially it was not clear whether there was something significant being shown here. There were
+                        so many points on a map, that were scattered all over Sydney. </p>
+
+                    <p class="text-left"> It wasn’t until I added the choropleth layer that the results became
+                        interesting. The darker red, or more disadvantaged suburbs, had a larger cluster of points. This
+                        showed that the more socio-economically disadvantaged suburbs do actually have a larger number
+                        of poker machines in the area. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./img/poker-maps/maps-3.png" class="img-fluid img-shadow" alt="Responsive image"
+                    style="width: 100%;">
+            </div>
+            <div class="col-md-6">
+                <img src="./img/poker-maps/maps-4.png" class="img-fluid img-shadow" alt="Responsive image">
+            </div>
+        </div>
+
+        <div class="row col-md-11">
+            <span class="xyz-caption">
+                <img-caption>Plot of number of poker machines per club</img-caption>
+            </span>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="portfolio-text">
+                    <p class="text-left">
+                        This data was interesting, but how could it be made more meaningful? To get a more
+                        representative number I had to look at the population of each area. I collected data of the net
+                        profit of each club in their Local Governement Area (LGA), as there was not this data avaliable
+                        for each suburb. This meant that it would not work with the shapefile I already processed and I
+                        would need to make another one for LGA’s. I went back into QGIS, gathered the new data and
+                        combined each LGA with their respective SEIFA score. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <h5 class="portfolio-title">RESEARCH</h5>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="portfolio-text center-children-vertically">
+                    <p class="text-left">
+                        I had the datasets, and now I wanted to see what existing map visualisations were out there. I
+                        wanted to discover what design choices people made and how the interaction could be enhanced.
+                        Color Brewer was a great resource for what color schemes to follow, and how they could be used
+                        to help distinguish different regions from each other. It was important to be able to view all
+                        like colours on a screen without confusing them with each other. Most maps I looked at had a
+                        choropleth visualisation, others had only points on a map, and I needed to combine both.
+                    </p>
+                    <p class="text-left">After researching several interactive visualisations, I decided upon the best
+                        way I could visualize my data on a map and the colour schemes I could use. Reds and oranges were
+                        used when representing negative or dangerous situations. Pink was used in the representation of
+                        lighter-hearted topics. Blue and green were commonly used in social or economic related maps.
+                        They all communicate their messages effectively. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="row">
+            <h5 class="portfolio-title">VISUALISING</h5>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="portfolio-text center-children-vertically">
+                    <p class="text-left">
+                        Once the data had been finalised and I had thought about how I was going to visualise the maps,
+                        I got into Carto again and started creating more.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./img/poker-maps/maps-visualise-1.png" class="img-fluid img-shadow" alt="Responsive image">
+            </div>
+            <div class="col-md-4">
+                <img src="./img/poker-maps/maps-visualise-2.png" class="img-fluid img-shadow" alt="Responsive image">
+            </div>
+            <div class="col-md-4">
+                <img src="./img/poker-maps/maps-visualise-3.png" class="img-fluid img-shadow" alt="Responsive image">
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-4" style="text-align:left;">
+                <span class="xyz-caption">
+                    <img-caption>Base Map</img-caption>
+                </span>
+            </div>
+            <div class="col-md-4" style="text-align:left;">
+                <span class="xyz-caption">
+                    <img-caption>Choropleth</img-caption>
+                </span>
+            </div>
+            <div class="col-md-4" style="text-align:left;">
+                <span class="xyz-caption">
+                    <img-caption>Data Points</img-caption>
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="portfolio-text center-children-vertically">
+                    <p class="text-left">
+                        The first step was finding the best base map. The base map needed to be a neutral colour to lay
+                        the foundation of the choropleth that would be on top. Carto provided a few default colours of
+                        which I chose the grey one as no other colours were really necessary.
+                    </p>
+                    <p class="text-left">
+                        The next step was adding the shapefile data on top. The blue colours represent the
+                        socio-economic status - the darker the area, the more disadvantaged.
+                    </p>
+                    <p class="text-left">
+                        Finally, I added the poker machine data as points. One problem I came across was the accuracy of
+                        the location of the dots, some of them had to be moved manually because the API I used had found
+                        slightly incorrect coordinates for some areas. I looked online for the coordinates of the
+                        inaccurate areas and edited the excel file accordingly.
+                    </p>
+                    <p class="text-left">
+                        After making the maps in Carto, I explored other tools online to achieve a similar goal. A great
+                        one I found for easily making and sharing maps is Kepler, a program created by Uber to help
+                        people create interactive map visualisations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-left ">
+                <h5>Machines Per Capita</h5>
+            </div>
+        </div>
+        <div class="row">
+            <iframe width="90%" height="450" src="./img/poker-maps/Machines-per-capita.html"
+                style="border:none;"></iframe>
+        </div>
+
+        <div class="row mt-4">
+                <div class="col-md-12 text-left mt-4 ">
+                    <h5>Net Profit Per Capita</h5>
+                </div>
+            </div>
+            <div class="row">
+                <iframe width="90%" height="450" src="./img/poker-maps/Net-Profit-Per-Capita.html"
+                    style="border:none;"></iframe>
+            </div>
+
+            
+
+            <div class="row mt-4">
+                    <div class="col-md-12 text-left mt-4">
+                        <h5>Net Profit Per Poker Machine</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <iframe width="90%" height="450" src="./img/poker-maps/Net-Profit-Per-Machine.html"
+                        style="border:none;"></iframe>
+                </div>
+        
+
+        <div class="row mt-4 mb-4">
+            <div class="col-md-12 back-button mb-4">
+                <a href="index.html" class="text-center">
+                    <h5>BACK</h5>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

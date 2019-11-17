@@ -92,9 +92,15 @@ img {
 
 }
 
+.xyz-text {
+  position:absolute;
+  top: -18%;
+
+}
+
 .move-text {
   position: absolute;
-  top: 0;
+  top: -15%;
   z-index: 99;
   left: -95%;
   color: black;
@@ -236,18 +242,19 @@ span.img-info {
 
 .port-heading-text h1 {
   font-family: "Europa-BoldItalic", sans-serif;
-  font-size: 4vw;
+  font-size: 3.5vw;
+  padding-top: 50px;
 }
 
 .port-heading-text h3 {
   font-family: "Europa-BoldItalic", sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .port-heading-text p {
   font-family: "Nunito-Italic", "Europa-Regular", sans-serif;
   /* padding-top: 20px; */
-  font-size: 1.25vw;
+  font-size: 1.1vw;
   text-align: center;
   /* width: 75%; */
 }
@@ -293,7 +300,13 @@ span.img-info {
 
 .text-quote {
   font-family: 'Europa-BoldItalic';
-  font-size: 1.4vw;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.text-quote-light {
+  font-family: 'Nunito-Italic', 'Europa-BoldItalic';
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -398,4 +411,52 @@ span.xyz-caption {
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Roboto Mono', monospace;
   font-size: 0.8vw;
+}
+
+.blank-space {
+  top: 0;
+  left:0;
+  height: 120px;
+}
+
+.info-page {
+  display:block
+}
+.info-text {
+  /* text-align:center; */
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 1.2vw;
+  position: relative;
+top:40%;
+left:0;
+ /* width: 50%;   */
+
+}
+
+.info-text a {
+  color:#494949;
+}
+
+.cv-link {
+  padding: 5px 0;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1vw;
+  width: 25%;
+  left: 38%;
+}
+
+.cv-link a {
+  text-decoration: none;
+  
+}
+
+.cv-link a:hover {
+  color: white;
+} 
+
+
+.cv-link:hover {
+  background-color: #494949;
 }
