@@ -11,6 +11,9 @@
     width: 16rem;
   }
 
+  .ash-text, .move-text {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -64,9 +67,9 @@
     margin-top: 1em;
   }
 
-  /* .ideation-bus {
-    max-width: 80%;
-  } */
+  .ash-text, .move-text {
+    opacity: 1;
+  }
 }
 
 
@@ -151,7 +154,7 @@ img {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 800;
   font-size: 2.5vw;
-  opacity: 0;
+  /* opacity: 0; */
   padding-bottom: 20%;
 
 }
@@ -171,7 +174,7 @@ img {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 800;
   font-size: 3vw;
-  opacity: 0;
+  /* opacity: 0; */
   /* padding: 20%; */
   padding-right: 60%;
   padding-bottom: 20%;
@@ -224,14 +227,14 @@ img {
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 1);
   border-color: rgba(255, 255, 255, 1);
-}
+} 
 
-
+/* 
 @media (max-width: 575px) {
   .navbar-nav {
     padding-left: 0px;
   }
-}
+} */
 
 .footer {
 
@@ -500,8 +503,9 @@ h3 {
 
 .text-quote-light {
   font-family: 'Nunito', 'Europa-BoldItalic';
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: italic;
+  /* font-weight: 600; */
   text-align: center;
 }
 
@@ -619,11 +623,12 @@ span.xyz-caption {
 
 .info-text {
   /* text-align:center; */
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: 1.2vw;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  font-size: 1.5rem;
   position: relative;
-  top: 40%;
+  top: 30%;
   left: 0;
   /* width: 50%;   */
 
