@@ -5,7 +5,11 @@
     left: 0;
     text-align: center;
   }
-
+  .pic-with-caption {
+   float: right;
+   margin-left: 1em;
+    width: 16rem;
+  }
 
 }
 
@@ -13,7 +17,8 @@
 
 
   .img-box .img-caption {
-    margin-top: 11em;
+    /* margin-top: 11em; */
+    padding-top: 50%;
   }
 
   .img-box .img-info {
@@ -44,6 +49,7 @@
 
   .iteration-img {
     max-width: 15%;
+    margin-bottom: 0;
   }
 
   .iteration-img-2 {
@@ -51,12 +57,16 @@
   }
 
   .ideation-img-pos {
-    max-width: 60%;
+    max-width: 90%;
   }
 
   .ideation-img2 {
-    margin-top: 2em;
+    margin-top: 1em;
   }
+
+  /* .ideation-bus {
+    max-width: 80%;
+  } */
 }
 
 
@@ -266,7 +276,7 @@ img {
 
 .container {
   font-family: 'Nunito', 'Europa-Regular', 'Roboto', Sans-Serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   /* color: #494949; */
   color: #1a1a1a;
@@ -298,10 +308,11 @@ img {
 
 
 span.img-caption {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Nunito', sans-serif;
   display: block;
+  padding-top: 80%;
   /* font-size: 1vw; */
-  font-weight: 500;
+  font-weight: 700;
   /* padding: 20px 0px 0px 0px; */
 }
 
@@ -315,16 +326,6 @@ span.img-info {
 
 .hero-img {
   width: 25rem;
-}
-
-.ideation-img {
-  width: 90%;
-  /* margin-top: 1em; */
-}
-
-.ideation-img2 {
-  width: 92%;
-  /* margin-top: 1em; */
 }
 
 .port-heading-text h1,
@@ -347,12 +348,13 @@ h3 {
 .port-heading-text p {
   font-family: "Nunito", "Europa-Regular", sans-serif;
   font-size: 1rem;
+  /* font-weight: 300; */
   font-style: italic;
   text-align: center;
 }
 
 .port-intro h5 {
-  font-family: "Nunito", sans-serif;
+  font-family: "DIN Alternate", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   margin-top: 3rem;
@@ -370,11 +372,12 @@ h3 {
 }
 
 .portfolio-title {
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
+  font-family: "DIN Alternate", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
   /* font-style: italic; */
   color: #2963FF;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 3rem;
   /* color: white; */
   /* padding: 10px 20px; */
@@ -392,16 +395,15 @@ h3 {
   margin-right: 3em;
 }
 
-.img-caption {
+/* .img-caption {
   margin-top: 9em;
 
-}
+} */
 
 .pic-with-caption {
-  width: 16em;
-  float: right;
+  /* width: 16em; */
+  /* float: right; */
   /* margin-left: 1em; */
-  margin-left: 1em;
   margin-bottom: 1em;
 }
 
@@ -410,12 +412,42 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   
+  
 }
 
 .iteration-img {
   padding-left: 0px;
   padding-right: 0;
+  display: flex;
+
 }
+
+.ideation-bus {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ideation-small-heading {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.solution-heading {
+  font-weight: 700;
+}
+/* 
+.iteration-img-2 {
+  float: right;
+  width: 200%;
+  margin-left: 2em;
+} */
+/* .iteration-img img{
+  width: 108px;
+  height: 258px;
+  object-fit: cover;
+} */
 
 /* .pic-with-caption span {
   width: 16em;
@@ -459,8 +491,10 @@ h3 {
 /* utilities */
 
 .text-quote {
-  font-family: 'Europa-BoldItalic';
-  font-size: 1.2vw;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
   text-align: center;
 }
 
@@ -479,8 +513,9 @@ h3 {
 }
 
 .ideation-bus-heading {
+  /* font-family: "DIN Alternate", sans-serif; */
   margin-top: 80px;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .iteration-heading {
@@ -490,10 +525,11 @@ h3 {
 }
 
 .solution-num {
-  font-size: 60px;
+  font-size: 3.2rem;
   color: #D0D0D0;
 
 }
+
 
 /* .tools {
   margin-top: 18px;
@@ -507,12 +543,12 @@ h3 {
 .back-button a {
   text-decoration: none;
   color: #969696;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'DIN Alternate', monospace;
 }
 
 .back-button a:hover {
   color: #000;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'DIN Alternate', monospace;
 }
 
 .row {
