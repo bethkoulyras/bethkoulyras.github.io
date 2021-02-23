@@ -534,6 +534,18 @@ h3 {
 
 }
 
+.discovering-concept .solution-num {
+  font-size: 2rem;
+}
+
+.face-ideation .img-caption {
+  padding: 0%;
+}
+
+.face-ideation .img-info {
+  font-style: italic;
+  text-align: left;
+}
 
 /* .tools {
   margin-top: 18px;
